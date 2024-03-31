@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Level1 {
     public static String BigMinus(String s1, String s2) {
         StringBuilder string = new StringBuilder();
