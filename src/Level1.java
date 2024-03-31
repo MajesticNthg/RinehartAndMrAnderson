@@ -9,25 +9,28 @@ public class Level1 {
 
         if (s1.length() == s2.length()) {
             for (int i = 0; i < s1.length(); i++) {
-                if (s1.charAt(i) == s2.charAt(i)) continue;
-                else if (s1.charAt(i) > s2.charAt(i)) {
+                if (s1.charAt(i) == s2.charAt(i) && i == s1.length() - 1) {
+                    string.insert(0, 0);
+                    return string.toString();
+                } else if (s1.charAt(i) > s2.charAt(i)) {
                     max.insert(0, s1);
                     min.insert(0, s2);
                     break;
+                } else if (s1.charAt(i) < s2.charAt(i)) {
+                    max.insert(0, s2);
+                    min.insert(0, s1);
+                    break;
                 }
+            }
+        }
                 else if (s1.length() > s2.length()) {
                     max.insert(0, s1);
                     min.insert(0, s2);
                 } else {
                     max.insert(0, s2);
                     min.insert(0, s1);
-                    break;
                 }
-            }
-        } else {
-            max.insert(0, s2);
-            min.insert(0, s1);
-        }
+
 
         String s3 = max.toString();
         String s4 = min.toString();
@@ -67,13 +70,7 @@ public class Level1 {
 
         return string.toString();
     }
-
-    public static void main(String[] args) {
-
-        String s1 = "213653333";
-        String s2 = "123653333";
-
-        System.out.println(BigMinus(s1, s2));
-
-    }
 }
+
+
+

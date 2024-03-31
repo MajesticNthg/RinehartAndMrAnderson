@@ -1,0 +1,12 @@
+
+z	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(Êùëıÿÿÿÿ8ò¹ ™é1
+s	java:S127-"XRefactor the code in order to not assign to this loop counter from within the loop body.(¨…ÄK8ò¹ ™é1
+s	java:S127?"XRefactor the code in order to not assign to this loop counter from within the loop body.(¨…ÄK8ò¹ ™é1
+7
+java:S1220""Move this file to a named package.8ó¹ ™é1
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„Œ ¶8úº ™é1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(„Œ ¶8ûº ™é1
+=
+java:S3626"Remove this redundant jump.(Âïà…şÿÿÿÿ8üº ™é1
+L	java:S106L"+Replace this use of System.out by a logger.(£â¬üÿÿÿÿ8È±¡™é1
